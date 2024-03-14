@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <h3 style="text-align: center;">Project Details List</h3><br>
+  <table class="table table-borderless; ">
+    <thead>
+      <tr style="background-color: #bbb6b6;">
+        <th>#</th>
+        <th>Name</th>
+        <!-- <th *ngIf="userRole=='admin'">Password</th> -->
+        <th>Project Id</th>
+        <th>Project Aims</th>
+        <th>Status</th>
+
+
+        <!-- <th >Action</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngFor="let user of userList; let i=index; trackBy:track"> -->
+      <tr *ngFor="let user of userList; let i=index; trackBy:track">
+
+        <td>{{ i+1 }}</td>
+        <td>{{ user.name }}</td>
+        <!-- <td *ngIf="userRole=='admin'">{{ user.password }}</td> -->
+        <td>{{ user.projectId }}</td>
+        <td>{{ user.projectAims }}</td>
+        <td>{{ user.status }}</td>
+        <!-- <td>{{ user.paddress }}</td>
+      <td>{{ user.caddress }}</td> -->
+
+
+        <!-- <td>
+        <a type="button" [routerLink]="['/add',user.id]" class="btn btn-success">Edit</a> 
+        
+        &nbsp;
+  
+         <button type="button" class="btn btn-danger" (click)="delete(user.id)">Delete</button>
+         &nbsp;
+  
+         <button type="button" [routerLink]="['/profile',user.id]" class="btn btn-primary">View</button>
+  
+  
+      </td> -->
+      </tr>
+    </tbody>
+  </table>

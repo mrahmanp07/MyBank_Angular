@@ -1,0 +1,92 @@
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<div class="container mt-5">
+  <div class="card custom-card">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Income vs Expense</h5>
+      <canvas id="myLineChart" width="400" height="400"></canvas>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="card custom-card">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Expense</h5>
+      <canvas id="myLineChart" width="400" height="400"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Sample data
+  var data = {
+    labels: ["January", "February", "March", "April", "May"],
+    datasets: [{
+      label: 'Sample Data',
+      data: [10, 20, 15, 25, 30],
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 2,
+      fill: false
+    }]
+  };
+
+  // Chart configuration
+  var config = {
+    type: 'line',
+    data: data,
+    options: {
+      scales: {
+        x: {
+          type: 'category',
+          labels: data.labels
+        },
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  };
+
+  // Create the chart
+  var myLineChart = new Chart(
+    document.getElementById('myLineChart'),
+    config
+  );
+});
+</script>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+  <!-- <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-
+4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" > -->
+  
+
+  <!-- <button style="margin-left: 30px; margin-top: 10px;" class="btn btn-primary btn-sm" (click)="newMessage()">Change Share component value</button> -->
+
+  <!-- <p>Parent Component {{sharedMessage}}</p> -->
+  <!-- <h3 style="text-align: center;">Welcome to MyBank</h3> -->
+  
+
+
+
+
+
+
+  
+
+ 

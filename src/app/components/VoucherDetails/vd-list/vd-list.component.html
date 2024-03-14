@@ -1,0 +1,51 @@
+
+<section class="container">
+    <header>Voucher Details List</header>
+    <form class="form"  [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="input-box">
+        <label for="officeDetails">Office Details Id</label>
+        <input type="number" formControlName="officeDetails" class="form-control" id="officeDetails" placeholder="Enter office Details" required />
+      </div>
+  
+      <div class="input-box">
+        <label for="projectDetails">Project Details Id</label>
+        <input type="number" formControlName="projectDetails" class="form-control" id="projectDetails" placeholder="Enter projectDetails" required />
+      </div>
+  
+      <div class="input-box">
+        <label for="chartOfAccounts">chartOfAccounts Id</label>
+        <input type="number" formControlName="chartOfAccounts" class="form-control" id="chartOfAccounts" placeholder="Write chartOfAccounts Id" required />
+      </div>
+      <div class="input-box">
+        <label for="fromCoaId">from Coa Id</label>
+        <input type="text" formControlName="status" class="form-control" id="status" placeholder="Write status" required />
+      </div>
+      <div class="input-box">
+        <label for="debit">Debit Taka</label>
+        <input type="text" formControlName="debit" class="form-control" id="debit" placeholder="Enter debit Taka" required />
+      </div>
+
+      <div class="input-box">
+        <label for="credit">Credit Taka</label>
+        <input type="text" formControlName="credit" class="form-control" id="credit" placeholder="Enter credit Taka" required />
+      </div>
+      <div class="input-box">
+        <label for="particular">Particular</label>
+        <input type="text" formControlName="particular" class="form-control" id="particular" placeholder="Write exact particular" required />
+      </div>
+      <div class="input-box">
+        <label for="date">Date</label>
+        <input type="date" formControlName="date" class="form-control" id="date" placeholder="Select date" required />
+      </div>
+      <div class="input-box">
+        <label for="voucherMaster">Voucher Master Id</label>
+        <input type="text" formControlName="voucherMaster" class="form-control" id="voucherMaster" placeholder="Enter voucherMaster Id" required />
+      </div>
+  
+  
+      <div class="input-box address">
+        
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>

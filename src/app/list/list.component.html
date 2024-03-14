@@ -1,0 +1,43 @@
+
+<!-- <button (click)="newMessage()"> Click</button> --><br>
+<div class="container-fluid">
+  <h3 style="text-align: center;">List of Vouchers</h3><br>
+<table class="table table-borderless; " >
+  <tr style="background-color: #bbb6b6;">
+    <th>#</th>
+    <th>Name</th>
+    <!-- <th *ngIf="userRole=='admin'">Password</th> -->
+    <th>Element Id</th>
+    <th>Organization Name</th>
+    <!-- <th>Date of Birth</th>
+    <th>gender</th>
+    <th>Permanent Address</th>
+    <th>Current Address</th> -->
+    <th >Action</th>
+  </tr>
+  <tr *ngFor="let user of userList;let i=index; trackBy:track">
+    <td>{{ i+1 }}</td>
+    <td>{{ user.name }}</td>
+    <!-- <td *ngIf="userRole=='admin'">{{ user.password }}</td> -->
+    <td>{{ user.elementId }}</td>
+    <td>{{ user.orgName }}</td>
+    <!-- <td>{{ user.date }}</td>
+    <td>{{ user.gender }}</td>
+    <td>{{ user.paddress }}</td>
+    <td>{{ user.caddress }}</td> -->
+    
+
+    <td>
+      <a type="button" [routerLink]="['/add',user.id]" class="btn btn-success">Edit</a> 
+      
+      &nbsp;
+
+       <button type="button" class="btn btn-danger" (click)="delete(user.id)">Delete</button>
+       &nbsp;
+
+       <button type="button" [routerLink]="['/profile',user.id]" class="btn btn-primary">View</button>
+
+
+    </td>
+  </tr>
+</table></div>

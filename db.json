@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": "b949",
+      "fullname": "Md. Ashiqur Rahman",
+      "mail": "ashique@gmail.com",
+      "phone": 1738456978,
+      "date": "2024-06-22",
+      "gender": "Male",
+      "paddress": "janina, cumilla, bangladesh",
+      "caddress": "Fokirapul, New paltan Line, Ramna, Dhaka 1200"
+    },
+    {
+      "id": "0ecb",
+      "fullname": "MD. Imran Hossain Mozumdar",
+      "mail": "imran@gmail.com",
+      "phone": 1728356987,
+      "date": "2024-01-03",
+      "gender": "Male",
+      "paddress": "dashgonj, Narayanganj,Dhaka-1100",
+      "caddress": "Matuail,gulistan,Dhaka-1200"
+    },
+    {
+      "id": "4fdd",
+      "fullname": "MD. Abeer Hossain",
+      "mail": "abeer@gmail.com",
+      "phone": 1787236598,
+      "date": "1998-10-22",
+      "gender": "Male",
+      "paddress": "janinagonj,vola sadar, vola",
+      "caddress": "janinapara,Kakrail,paltan, Dhaka-1110"
+    },
+    {
+      "id": "7796",
+      "fullname": "MD. Abidur Rahman",
+      "mail": "abidur@gmail.com",
+      "phone": 178212506,
+      "date": "1991-04-27",
+      "gender": "Male",
+      "paddress": "Kalikha, Dhakua, Tarakanda, Mymensing-1524",
+      "caddress": "kafrul, Cantonment, Dhaka-1206"
+    },
+    {
+      "id": "e873",
+      "fullname": "Mst. Ruma Aktar",
+      "mail": "ruma@gmail.com",
+      "phone": 1767890230,
+      "date": "1995-01-06",
+      "gender": "Female",
+      "paddress": "JaninaNagar, Janina, Janinazila, Chittagong",
+      "caddress": "janinapara,Shajahanpur,Janina, Dhaka-1110"
+    },
+    {
+      "id": "5212",
+      "fullname": "Mst. Umme Honey",
+      "mail": "honey@gmail.com",
+      "phone": 1767560310,
+      "date": "1998-10-09",
+      "gender": "Female",
+      "paddress": "Namnaipara, Puran Dhaka, Dhaka-1200",
+      "caddress": "Janina Para, Puran Dhaka, Dhaka-1200"
+    }
+  ],
+  "auth": [
+    {
+      "id": "8c0e",
+      "username": "abc123",
+      "password": "12345",
+      "email": "abc@gmail.com",
+      "role": "employee"
+    },
+    {
+      "id": "58f4",
+      "username": "test",
+      "password": "123",
+      "email": "test@gmail.com",
+      "role": "employee"
+    },
+    {
+      "id": "0d7a",
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com",
+      "role": "admin"
+    }
+  ]
+}

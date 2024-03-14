@@ -1,0 +1,124 @@
+<!-- <form class="container-fluid justify-content col-md-6" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="username">User Name</label>
+
+      <input type="text" formControlName="username" class="form-control" id="username"
+        placeholder="User Name">
+
+    </div>
+    <div class="form-group col-md-6">
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" class="form-control" id="password"
+        placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="userId">User Id</label>
+    <input type="text" class="form-control" formControlName="userId" id="userId" placeholder="Type your your UserId">
+  </div>
+  <div class="form-group">
+    <label for="brunchName">Brunch Name</label>
+    <input type="text" class="form-control" formControlName="brunchName" id=""
+      placeholder="Brunch name">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="address">Your parmanent address</label>
+      <input type="text" class="form-control" formControlName="address" id="inputCity" placeholder="State, city, postal/zip code">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="contactNumber">Contact Number</label>
+      <input type="number" class="form-control" formControlName="contactNumber" id="contactNumber" placeholder="+8801000000000">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" formControlName="gridCheck" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Remind me
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form> -->
+
+
+
+<section class="container">
+  <header>Elelment Form</header>
+  <form class="form"  [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="input-box">
+      <label for="fullname">Name</label>
+      <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter your full name" required />
+    </div>
+
+    <div class="input-box">
+      <label for="fullname">Element Id</label>
+      <input type="text" formControlName="elementId" class="form-control" id="elementId" placeholder="Enter your full name" required />
+    </div>
+
+    <div class="input-box">
+      <label for="fullname">Organization Name</label>
+      <input type="text" formControlName="orgName" class="form-control" id="orgName" placeholder="Enter your full name" required />
+    </div>
+
+    <!-- <div class="input-box">
+      <label for="mail">Email Address</label>
+      <input type="email" formControlName="mail" class="form-control" id="mail" placeholder="Enter email address" required />
+    </div> -->
+
+    <!-- <div class="column">
+      <div class="input-box">
+        <label for="phone">Phone Number</label>
+        <input type="number" formControlName="phone" class="form-control" id="phone" placeholder="Enter phone number" required />
+      </div> -->
+      
+      <!-- <div class="input-box">
+        <label>Date of Birth</label>
+        <input type="date" formControlName="date" class="form-control" id="date" placeholder="Enter your birth date" required />
+      </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="gender-box">
+      <h3>Gender</h3>
+      <div class="gender-option">
+        <div class="gender">
+          <input type="radio" formControlName="gender"  id="check-male" value="Male" />
+          <label for="check-male">Male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" formControlName="gender" id="check-female" value="Female"/>
+          <label for="check-female">Female</label>
+        </div>
+        <div class="gender">
+          <input type="radio" formControlName="gender"  id="check-other" value="Others"/>
+          <label for="check-other">prefer not to say</label>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="input-box address">
+      <!-- <label>Address</label>
+      <input type="text" formControlName="paddress" class="form-control" id="paddress" placeholder="Enter permanent address" required />
+      <input type="text" formControlName="caddress" class="form-control" id="caddress" placeholder="Enter current address" required /> -->
+      <!-- <div class="column">
+        <div class="select-box">
+          <select>
+            <option hidden>Country</option>
+            <option>Bangladesh</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>Nepal</option>
+          </select>
+        </div>
+        <input type="text" formControlName="fullname" class="form-control" id="fullname" placeholder="Enter your city" required />
+      </div>
+      <div class="column">
+        <input type="text" formControlName="fullname" class="form-control" id="fullname" placeholder="Enter your region" required />
+        <input type="number" formControlName="fullname" class="form-control" id="fullname" placeholder="Enter postal code" required />
+      </div> -->
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</section>
